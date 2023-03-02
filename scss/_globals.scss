@@ -1,0 +1,14 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+.flex.align {
+  align-items: center;
+}
+.flex.justify {
+  justify-content: center;
+}

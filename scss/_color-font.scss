@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap");
+
+:root {
+  --bg-body: red;
+
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  // ## Gradients
+
+  --result-bg1: hsl(251, 100%, 63%);
+  --result-bg2: hsl(242, 82%, 55%);
+
+  --circle1: hsla(256, 72%, 46%, 1);
+  --circle2: hsla(241, 72%, 46%, 0);
+
+  // ### Neutral
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --circle-text: hsla(242, 100%, 86%, 0.568);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+
+  --text100: hsla(224, 30%, 27%, 0.63);
+  --li-bg: hsl(5, 100%, 97%);
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  h1 {
+    color: var(--Light-lavender);
+    font-size: 1.2rem;
+    padding-block: 25px;
+    text-align: center;
+  }
+
+  section.result .circle div {
+    p {
+      // outline: 2px red solid;
+      text-align: center;
+    }
+    p:nth-of-type(1) {
+      color: var(--Pale-blue);
+      font-size: 3.3rem;
+      font-weight: 800;
+    }
+    p:nth-of-type(2) {
+      color: var(--circle-text);
+      font-weight: 700;
+    }
+  }
+
+  section.result .details {
+    h2 {
+      padding-block: 10px;
+      color: var(--Pale-blue);
+      text-align: center;
+    }
+    p {
+      font-weight: 500;
+      color: var(--Light-lavender);
+      max-width: 270px;
+      margin-inline: auto;
+    }
+  }
+
+  section.summary {
+    h3 {
+      // outline: 2px #ff00c8 solid; ////
+      padding-bottom: 25px;
+      font-size: 1.3rem;
+      color: var(--Dark-gray-blue);
+    }
+
+    ul {
+      li {
+        p {
+          font-weight: 700;
+        }
+        p:nth-of-type(2) {
+          color: var(--Dark-gray-blue);
+          span {
+            color: var(--text100);
+          }
+        }
+      }
+      li:nth-of-type(1) {
+        color: var(--Light-red);
+      }
+      li:nth-of-type(2) {
+        color: var(--Orangey-yellow);
+      }
+      li:nth-of-type(3) {
+        color: var(--Green-teal);
+      }
+      li:nth-of-type(4) {
+        color: var(--Cobalt-blue);
+      }
+    }
+
+    button {
+      color: var(--Light-lavender);
+      font-weight: 800;
+      font-size: 1.2rem;
+    }
+  }
+}
